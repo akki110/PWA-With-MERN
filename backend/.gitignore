@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment files
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Build output
+dist/
+build/
+
+# PM2 logs (if using PM2 process manager)
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: local database or uploads
+uploads/
+*.sqlite
+*.db
+
+# Misc
+*.tgz
+.cache/
+.next/
