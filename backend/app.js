@@ -19,9 +19,9 @@ const allowedOrigins = [
   'http://localhost:5173',           // Vite dev
   'http://localhost:3000',           // Build (serve -s dist)
   'http://localhost:4596',           // API backend itself
-  'http://192.168.29.104:5173',      // Mobile dev
-  'http://192.168.29.104:3000',      // Mobile build
-  'http://192.168.29.104:4596',      // Mobile API
+  'http://192.168.29.109:5173',      // Mobile dev
+  'http://192.168.29.109:3000',      // Mobile build
+  'http://192.168.29.109:4596',      // Mobile API
 ];
 
 app.use(cors({
@@ -43,7 +43,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api', indexRouter);
+app.use('/api/products', indexRouter);
 app.use('/users', usersRouter);
 
 // mongoDB connection setup
